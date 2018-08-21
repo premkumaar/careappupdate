@@ -1,0 +1,343 @@
+{
+  "id_name_map": [
+    {
+      "book_id": "GEN",
+      "book_name": "Genesis",
+      "section": "OT",
+      "number": 1
+    },
+{
+    "book_id": "EXO",
+      "book_name": "Exodus",
+      "section": "OT",
+      "number": 2
+    },
+{
+    "book_id": "LEV",
+      "book_name": "Leviticus",
+      "section": "OT",
+      "number": 3
+    },
+{
+    "book_id": "NUM",
+      "book_name": "Numbers",
+      "section": "OT",
+      "number": 4
+    },
+{
+    "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "section": "OT",
+      "number": 5
+    },
+{
+    "book_id": "JOS",
+      "book_name": "Joshua",
+      "section": "OT",
+      "number": 6
+    },
+ {   "book_id": "JDG",
+      "book_name": "Judges",
+      "section": "OT",
+      "number": 7
+    },
+  {  "book_id": "RUT",
+      "book_name": "Ruth",
+      "section": "OT",
+      "number": 8
+    },
+   { "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "section": "OT",
+      "number": 9
+    },
+{
+    "book_id": "2SA",
+      "book_name": "2 Samuel",
+      "section": "OT",
+      "number": 10
+    },
+    {"book_id": "1KI",
+      "book_name": "1 Kings",
+      "section": "OT",
+      "number": 11
+    },
+    {"book_id": "2KI",
+      "book_name": "2 Kings",
+      "section": "OT",
+      "number": 12
+    },
+{
+    "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "section": "OT",
+      "number": 13
+    },
+{
+    "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "section": "OT",
+      "number": 14
+    },
+ {   "book_id": "EZR",
+      "book_name": "Ezra",
+      "section": "OT",
+      "number": 15
+    },
+  {  "book_id": "NEH",
+      "book_name": "Nehemiah",
+      "section": "OT",
+      "number": 16
+    },
+   { "book_id": "EST",
+      "book_name": "Esther",
+      "section": "OT",
+      "number": 17
+    },
+   { "book_id": "JOB",
+      "book_name": "Job",
+      "section": "OT",
+      "number": 18
+    },
+   { "book_id": "PSA",
+      "book_name": "Psalms",
+      "section": "OT",
+      "number": 19
+    },
+   { "book_id": "PRO",
+      "book_name": "Proverbs",
+      "section": "OT",
+      "number": 20
+    },
+   { "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "section": "OT",
+      "number": 21
+    },
+   { "book_id": "SNG",
+      "book_name": "Song of Solomon",
+      "section": "OT",
+      "number": 22
+    },
+   {"book_id":  "ISA",
+      "book_name": "Isaiah",
+      "section": "OT",
+      "number": 23
+    },
+  {"book_id":   "JER",
+      "book_name": "Jeremiah",
+      "section": "OT",
+      "number": 24
+    },
+  {"book_id":   "LAM",
+      "book_name": "Lamentations",
+      "section": "OT",
+      "number": 25
+    },
+   {"book_id":  "EZK",
+      "book_name": "Ezekiel",
+      "section": "OT",
+      "number": 26
+    },
+  {"book_id":   "DAN",
+      "book_name": "Daniel",
+      "section": "OT",
+      "number": 27
+    },
+  {"book_id":   "HOS",
+      "book_name": "Hosea",
+      "section": "OT",
+      "number": 28
+    },
+  {"book_id":   "JOL",
+      "book_name": "Joel",
+      "section": "OT",
+      "number": 29
+    },
+  {"book_id":   "AMO",
+      "book_name": "Amos",
+      "section": "OT",
+      "number": 30
+    },
+  {"book_id":   "OBA",
+      "book_name": "Obadiah",
+      "section": "OT",
+      "number": 31
+    },
+   {"book_id":  "JON",
+      "book_name": "Jonah",
+      "section": "OT",
+      "number": 32
+    },
+  {"book_id":   "MIC",
+      "book_name": "Micah",
+      "section": "OT",
+      "number": 33
+    },
+   {"book_id":  "NAM",
+      "book_name": "Nahum",
+      "section": "OT",
+      "number": 34
+    },
+ { "book_id":   "HAB",
+      "book_name": "Habakkuk",
+      "section": "OT",
+      "number": 35
+    },
+  {"book_id":   "ZEP",
+      "book_name": "Zephaniah",
+      "section": "OT",
+      "number": 36
+    },
+   {"book_id":  "HAG",
+      "book_name": "Haggai",
+      "section": "OT",
+      "number": 37
+    },
+   {"book_id":  "ZEC",
+      "book_name": "Zechariah",
+      "section": "OT",
+      "number": 38
+    },
+   {"book_id":  "MAL",
+      "book_name": "Malachi",
+      "section": "OT",
+      "number": 39
+    },
+  {"book_id":   "MAT",
+      "book_name": "Matthew's Gospel",
+      "section": "NT",
+      "number": 41
+    },
+   {"book_id":  "MRK",
+      "book_name": "Mark's Gospel",
+      "section": "NT",
+      "number": 42
+    },
+    {"book_id": "LUK",
+      "book_name": "Luke's Gospel",
+      "section": "NT",
+      "number": 43
+    },
+    {"book_id": "JHN",
+      "book_name": "John's Gospel",
+      "section": "NT",
+      "number": 44
+    },
+   {"book_id":  "ACT",
+      "book_name": "Acts",
+      "section": "NT",
+      "number": 45
+    },
+   {"book_id":  "ROM",
+      "book_name": "Romans",
+      "section": "NT",
+      "number": 46
+    },
+   {"book_id":  "1CO",
+      "book_name": "1 Corinthians",
+      "section": "NT",
+      "number": 47
+    },
+   {"book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "section": "NT",
+      "number": 48
+    },
+    {"book_id":"GAL",
+      "book_name": "Galatians",
+      "section": "NT",
+      "number": 49
+    },
+   {"book_id": "EPH",
+      "book_name": "Ephesians",
+      "section": "NT",
+      "number": 50
+    },
+    {"book_id":"PHP",
+      "book_name": "Philippians",
+      "section": "NT",
+      "number": 51
+    },
+   {"book_id": "COL",
+      "book_name": "Colossians",
+      "section": "NT",
+      "number": 52
+    },
+   {"book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "section": "NT",
+      "number": 53
+    },
+   {"book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "section": "NT",
+      "number": 54
+    },
+   {"book_id": "1TI",
+      "book_name": "1 Timothy",
+      "section": "NT",
+      "number": 55
+    },
+    {"book_id":"2TI",
+      "book_name": "2 Timothy",
+      "section": "NT",
+      "number": 56
+    },
+    {"book_id":"TIT",
+      "book_name": "Titus",
+      "section": "NT",
+      "number": 57
+    },
+   {"book_id": "PHM",
+      "book_name": "Philemon",
+      "section": "NT",
+      "number": 58
+    },
+   {"book_id": "HEB",
+      "book_name": "Hebrews",
+      "section": "NT",
+      "number": 59
+    },
+    {"book_id":"JAS",
+      "book_name": "James",
+      "section": "NT",
+      "number": 60
+    },
+  {"book_id":  "1PE",
+      "book_name": "1 Peter",
+      "section": "NT",
+      "number": 61
+    },
+   {"book_id": "2PE",
+      "book_name": "2 Peter",
+      "section": "NT",
+      "number": 62
+    },
+   {"book_id": "1JN",
+      "book_name": "1 John",
+      "section": "NT",
+      "number": 63
+    },
+    {"book_id":"2JN",
+      "book_name": "2 John",
+      "section": "NT",
+      "number": 64
+    },
+   {"book_id": "3JN",
+      "book_name": "3 John",
+      "section": "NT",
+      "number": 65
+    },
+   {"book_id": "JUD",
+      "book_name": "Jude",
+      "section": "NT",
+      "number": 66
+    },
+   {"book_id": "REV",
+      "book_name": "Revelation",
+      "section": "NT",
+      "number": 67
+    }
+  ]
+}
