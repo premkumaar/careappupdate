@@ -3,9 +3,9 @@ import {  StyleSheet, View,  TouchableOpacity,Alert,Text,YellowBox,TextInput }
  from 'react-native';
  
 
-var Realm = require('realm');
+//var Realm = require('realm');
  
-let realm ;
+//let realm ;
 
 
 export default class EditActivity extends Component{
@@ -70,7 +70,9 @@ export default class EditActivity extends Component{
       })
    
      }
-   
+  //  Update_Person(){
+  //     DbHelper.Update_Person()
+  //  }
     Update_Person=()=>{
       var obj = realm.objects('Contacts_Info');
       var ID = 0;
@@ -102,6 +104,10 @@ export default class EditActivity extends Component{
 
    
     }
+// Delete_Person(){
+  
+//   DbHelper.Delete_Person()
+// }
 
     Delete_Person=()=>{
    
@@ -122,13 +128,13 @@ export default class EditActivity extends Component{
    
        realm.delete(realm.objects('Contacts_Info')[ID]);
    
-        });
+     });
    
-      Alert.alert("Record Deleted Successfully.")
+     Alert.alert("Record Deleted Successfully.")
       this.props.navigation.state.params.updateData(null,null,null,null,null)
       this.props.navigation.navigate('First');
    
-    }
+   }
    
     render() {
       console.log("render function")

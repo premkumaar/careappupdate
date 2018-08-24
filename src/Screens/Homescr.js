@@ -8,6 +8,7 @@ import { Image, StyleSheet, View, ListView, TouchableOpacity,Alert,Text,YellowBo
  from 'react-native';
  import Modal from "react-native-simple-modal";
 var Realm = require('realm');
+
 import UserEnterActivity from './UserEnter';
 import EditActivity from'./EditActivity';
 
@@ -49,8 +50,8 @@ class homescr extends Component {
      'Warning: componentWillReceiveProps is deprecated',
      'Warning: isMounted(...) is deprecated', 'Module RCTImageLoader'
     ]);
+    var data = realm.objects('Contacts_Info');
  
-   var mydata = realm.objects('Contacts_Info');
    let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
  
     this.state = {
@@ -60,14 +61,14 @@ class homescr extends Component {
         mobile_number:'',
         email_id:'',
         address:'',
-        
-        dataSource: ds.cloneWithRows(mydata),
-        data:mydata
+        data:'',
+        dataSource: ds.cloneWithRows(data)
       };
       
   }
   
-  updateData = (first,last,mobile,emaill,addr)=>{
+  updateData=(first,last,mobile,emaill,addr)=>
+  {
     this.setState({first_name:first,last_name:last,mobile_number:mobile,email_id:emaill,address:addr})
     // update or add object in Realm
     this.setState({
@@ -121,7 +122,7 @@ class homescr extends Component {
       Mobile : mobile_number,
       Email : email_id,
       Address: address,
-      updateData: this.updateData,
+     updateData: this.updateData,
   })
   }
     
@@ -137,7 +138,12 @@ class homescr extends Component {
     )
   }
   
-  
+  // async componentDidMount(){
+  //   var res = await DbHelper.getData()
+  //   console.log("resuly from homescreen "+res)
+  //   this.setState({data:res})
+
+  // }
 
 
 render() 

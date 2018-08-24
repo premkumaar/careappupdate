@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {  StyleSheet, View,  TouchableOpacity,Alert,Text,YellowBox,TextInput ,Button} 
  from 'react-native';
  import { DatePickerDialog } from 'react-native-datepicker-dialog';
+ 
 
 import moment from 'moment';
  
@@ -17,15 +18,15 @@ export default class UserEnterActivity extends Component
  {
     title: 'UserEnterActivity',
  };
- GoTohomescr= () =>
+ GoTohomescr = () =>
 {
-  this.props.navigation.state.params.updateData(this.state.first_name,this.state.last_name,this.state.mobile_number,this.state.email_id,this.state.address,this.state.DateText)
+  this.props.navigation.state.params.updateData(this.state.first_name,this.state.last_name,this.state.mobile_number,this.state.email_id,this.state.address)
    this.props.navigation.navigate('First');
    
    }
-constructor(){
+constructor(props){
 
-  super();
+  super(props);
 
   this.state = {
 
@@ -104,9 +105,9 @@ onDatePickedFunction = (date) => {
   });
 }
 
-add_Person=()=>{
+ add_Person=()=> {
 
-
+ // await   DbHelper.addData(first_name,last_name,mobile_number,email_id,address)
   realm.write(() => {
 
     var ID = realm.objects('Contacts_Info').length + 1;

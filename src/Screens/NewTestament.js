@@ -9,6 +9,7 @@ import React, { Component } from 'react';
 import { Text, StyleSheet, View, ListView, TextInput, ActivityIndicator, Alert } from 'react-native';
 var realm = require('realm');
 
+
 export default class MyProject extends Component {
  
   constructor(props) {
@@ -39,9 +40,11 @@ export default class MyProject extends Component {
       //     }
       //   }
       // }
-     });
+    });
    
+    //var mydata = this.getData();
 
+    //console.log("data is"+ JSON.stringify(mydata))
    var mydata = realm.objects('Contacts_Info');
    let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
  
@@ -55,7 +58,7 @@ export default class MyProject extends Component {
         
         isLoading: true,
         text: '',
-      
+      mydata:'',
        dataSource: ds.cloneWithRows(mydata),
          }
          this.arrayholder = mydata ;
@@ -67,6 +70,12 @@ export default class MyProject extends Component {
    Alert.alert(first_name,last_name,mobile_number,email_id,address);
   
   }
+  // componentDidMount() {
+  //   console.log("hdhd", DbHelper.getData())
+  // }
+  // getData = async () => {
+  //   return await DbHelper.getData();
+  // }
   
    SearchFilterFunction(text){
      
@@ -92,7 +101,12 @@ export default class MyProject extends Component {
       />
     );
   }
- 
+  // async componentDidMount(){
+  //   var res = await DbHelper.getData()
+  //   console.log("resuly from homescreen "+res)
+  //   this.setState({mydata:res})
+
+  // }
  
   render() {
     
@@ -116,7 +130,7 @@ export default class MyProject extends Component {
  
           renderRow={(rowData) => <Text style={styles.rowViewContainer} 
  
-          onPress={this.GetListViewItem.bind(this, rowData.first_name,rowData.last_name,rowData.mobile_number,rowData.email_id,rowData.address)} >{rowData.first_name} {rowData.last_name} {rowData.mobile_number}{rowData.email_id}{rowData.address}</Text>}
+          onPress={this.GetListViewItem.bind(this, rowData.first_name)} >{rowData.first_name}</Text>}
       
           enableEmptySections={true}
  
