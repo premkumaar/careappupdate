@@ -65,9 +65,9 @@ export default class MyProject extends Component {
          
   }
    
-    GetListViewItem (first_name,last_name,mobile_number,email_id,address) {
+    GetListViewItem (first_name,last_name) {
     
-   Alert.alert(first_name,last_name,mobile_number,email_id,address);
+   Alert.alert(first_name,last_name);
   
   }
   // componentDidMount() {
@@ -130,7 +130,7 @@ export default class MyProject extends Component {
  
           renderRow={(rowData) => <Text style={styles.rowViewContainer} 
  
-          onPress={this.GetListViewItem.bind(this, rowData.first_name)} >{rowData.first_name}</Text>}
+          onPress={this.GetListViewItem.bind(this, rowData.first_name , rowData.last_name,rowData.mobile_number,rowData.email_id,rowData.address)} >{rowData.first_name},{rowData.last_name},{rowData.mobile_number},{rowData.email_id},{rowData.address}</Text>}
       
           enableEmptySections={true}
  

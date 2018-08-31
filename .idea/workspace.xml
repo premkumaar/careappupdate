@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="de30657e-d63f-44fe-be6f-ff6b51c04ac1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change beforePath="$PROJECT_DIR$/src/Screens/EditActivity.js" afterPath="$PROJECT_DIR$/src/Screens/EditActivity.js" />
-      <change beforePath="$PROJECT_DIR$/src/Screens/Homescr.js" afterPath="$PROJECT_DIR$/src/Screens/Homescr.js" />
-      <change beforePath="$PROJECT_DIR$/src/Screens/NewTestament.js" afterPath="$PROJECT_DIR$/src/Screens/NewTestament.js" />
-      <change beforePath="$PROJECT_DIR$/src/Screens/UserEnter.js" afterPath="$PROJECT_DIR$/src/Screens/UserEnter.js" />
-      <change beforePath="$PROJECT_DIR$/src/db/Contacts_Info.js" afterPath="$PROJECT_DIR$/src/db/Contacts_Info.js" />
-      <change beforePath="$PROJECT_DIR$/src/db/DbHelper.js" afterPath="$PROJECT_DIR$/src/db/DbHelper.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +19,7 @@
       <projects_view />
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="77" />
     <option name="y" value="47" />
     <option name="width" value="1161" />
@@ -51,8 +41,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -65,7 +55,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,7 +180,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="77" y="47" width="1299" height="743" extended-state="7" />
+    <frame x="77" y="47" width="1299" height="743" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

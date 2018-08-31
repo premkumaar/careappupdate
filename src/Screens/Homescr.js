@@ -50,7 +50,7 @@ class homescr extends Component {
      'Warning: componentWillReceiveProps is deprecated',
      'Warning: isMounted(...) is deprecated', 'Module RCTImageLoader'
     ]);
-    var data = realm.objects('Contacts_Info');
+    var mydata = realm.objects('Contacts_Info');
  
    let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
  
@@ -61,8 +61,8 @@ class homescr extends Component {
         mobile_number:'',
         email_id:'',
         address:'',
-        data:'',
-        dataSource: ds.cloneWithRows(data)
+        data:mydata,
+        dataSource: ds.cloneWithRows(mydata)
       };
       
   }
