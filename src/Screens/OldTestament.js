@@ -6,8 +6,9 @@
 
 import React, { Component } from 'react';
 import {
-  StyleSheet, FlatList, Text, View
+   FlatList, Text, View
 } from 'react-native';
+import StyleSheet from './Style'
 import ajax from './books.json'
 //import {Icon,button,Container,Header,Content,Left} from 'native-base'
 //import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -29,16 +30,16 @@ import ajax from './books.json'
   
   render() {
     return (
-      <View style={styles.container} >
-        <Text style={styles.h2text}>
+      <View style={StyleSheet.container} >
+        <Text style={StyleSheet.h2text}>
           Bible Books
         </Text>
           <FlatList
           data={this.state.id_name_map}
           showsVerticalScrollIndicator={false}
           renderItem={({item}) =>
-          <View style={styles.flatview}>
-            <Text style={styles.book_name}>{item.book_name}</Text>
+          <View style={StyleSheet.flatview}>
+            <Text style={StyleSheet.book_name}>{item.book_name}</Text>
          
          </View>
           }
@@ -49,32 +50,5 @@ import ajax from './books.json'
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  h2text: {
-    marginTop: 10,
-    fontFamily: 'Helvetica',
-    fontSize: 36,
-    fontWeight: 'bold',
-  },
-  flatview: {
-    justifyContent: 'center',
-    paddingTop: 30,
-    borderRadius: 2,
-  },
-  name: {
-    fontFamily: 'Verdana',
-    fontSize: 18
-  },
-  email: {
-    color: 'red'
-  }
-  
-});
+
 

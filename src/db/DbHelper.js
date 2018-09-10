@@ -1,81 +1,101 @@
 
 'use strict';
-import Realm from 'realm'
-import Contacts_Info from './Contacts_Info';
+import Realm from 'realm';
+import {Alert} 
+ from 'react-native';
+import ContactsInfo from './ContactsInfo';
 var RNFS = require('react-native-fs');
 
 class DbHelper {
 
-    async getRealm() {
+
+ async getRealm() {
+ 
     	try {
-    		return await Realm.open({
-                path:RNFS.DocumentDirectoryPath + '/care.realm',
-				schema: [Contacts_Info] })
+    		return  await Realm.open({schema: [ContactsInfo], schemaVersion: 2})
     	} catch (err) {
+        console.log("error "+err)
     		return null;
     	}
     }
-    
-    async addData(first_name,last_name,mobile_number,email_id,address){
-        console.log("first name"+first_name)
-        let realm =await this.getRealm()
-        var ID = realm.objects('Contacts_Info').length + 1;
+    async renderData(){
+      const realm = await this.getRealm()
+      
+     if(realm==null){
+        
+      }
+      else{
+        return realm.objects("Contacts_Info")
+        console.log("value is there")
+      }
+    }
+      async addData(fname,Lname,mobile,email,address) {
+      const realm = await this.getRealm()
+      
+        console.log("opennnnn"+realm.length);
+        var ID =   realm.objects('Contacts_Info').length + 1;
+        
         if(realm){
-            console.log("realm is there")
+            
             realm.write(()=>{
-                console.log("write query")
+                
                     realm.create('Contacts_Info', {
                     person_id: ID, 
-                    first_name:first_name,
-                    last_name:last_name,
-                    mobile_number:mobile_number,
-                    email_id:email_id,
+                    first_name:fname,
+                    last_name:Lname,
+                    mobile_number:mobile,
+                    email_id:email,
                     address:address
                     });
             })
+        Alert.alert("Student Details Added Successfully.")
         }
 
-    }
-    async getData() {
-        let realm = await this.getRealm()
-        console.log("geting data"+JSON.stringify(realm.objects('Contacts_Info')));
-        return realm.objects('Contacts_Info')
 
     }
+    // async getData() {
+    //     let realm = await this.getRealm()
+    //     return realm.objects('Contacts_Info')
+
+    // }
    
-    async Update_Person(){
-        let realm =await this.getRealm()
+    async Update_Person(id,fname,lname,mobileNum,emailId,address){
+       
+      console.log("updatevalues.. ID"+ id); 
+      console.log("updatevalues.."+ fname); 
+
+      let realm = await this.getRealm()
         var obj = realm.objects('Contacts_Info');
+        console.log("uppppp",obj);
         var ID = 0;
       realm.write(() => {
-       
-      
-        for (let i = 0; i < obj.length; i++) {
         
-                  if(obj[i].person_id === this.state.Person_Id)
+        for (let i = 0; i < obj.length; i++) {
+                  if(obj[i].person_id === id)
                     {
-              
                       ID = i
                     }
                   }
-        
-           obj[ID].first_name = this.state.First_Name;
-           obj[ID].last_name = this.state.Last_Name;
-           obj[ID].mobile_number = this.state.Mobile_Number;
-           obj[ID].email_id = this.state.Email_Id;
-           obj[ID].address = this.state.Address.toString();
+                  console.log("id in for loop "+ID)
+           obj[ID].first_name = fname;
+           obj[ID].last_name =  lname;
+           obj[ID].mobile_number = mobileNum;
+           obj[ID].email_id = emailId;
+           obj[ID].address = address;
      
           });
+          Alert.alert("Student Details Updated Successfully.")
         }
-        async  Delete_Person(){
-            let realm =await this.getRealm()
+         async Delete_Person(id){
+            let realm = await this.getRealm()
+          
             realm.write(() => {
-              
-              var ID = this.state.Person_Id - 1;
-         
-             realm.delete(realm.objects('Contacts_Info')[ID]);
-         
-              });
+              console.log("opennnnnnnnnnnn")
+               var ID = id - 1;
+               console.log("ID",ID);
+              realm.delete(realm.objects('Contacts_Info')[ID]);
+            });
+              Alert.alert("Record Deleted Successfully.")
             }
 
 }

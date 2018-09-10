@@ -1,5 +1,5 @@
 import {TabNavigator,DrawerNavigator,StackNavigator, DrawerActions} from 'react-navigation';
-import Homescr from './Homescr';
+import Homescr from './HomeScreen';
 import {
     Platform,
     StyleSheet,

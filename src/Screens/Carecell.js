@@ -7,15 +7,15 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
   Text,
   View,
-  PixelRatio,
-  TouchableOpacity,Platform,
+
+  TouchableOpacity,
   AsyncStorage,
   Image,Alert,
   TextInput
 } from 'react-native';
+import StyleSheet from './Style'
 import ImagePicker from 'react-native-image-picker';
 
 
@@ -111,39 +111,39 @@ export default class Carecellscr extends Component{
     console.log("area name "+this.state.AreaName)
     console.log("image source"+JSON.stringify(this.state.ImageSource.uri))
     return (
-      <View style={styles.container}>
+      <View style={StyleSheet. carecontainer}>
 
         <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)} style={{justifyContent:'flex-end',alignItems:'flex-end'}}>
 
-          <View style={styles.ImageContainer}>
+          <View style={StyleSheet.ImageContainer}>
 
           { this.state.ImageSource === null ? <Text>Select a Photo</Text> :
-            <Image style={styles.ImageContainer} source={this.state.ImageSource} />
+            <Image style={StyleSheet.ImageContainer} source={this.state.ImageSource} />
           }
       </View>
     </TouchableOpacity>
-    <TextInput style = {styles.input}
+    <TextInput style = {StyleSheet.input}
                underlineColorAndroid = "transparent"
                placeholder = "AreaName"
                placeholderTextColor = "#9a73ef"
                onChangeText = {(value) => this.setAreaName(value)}
                autoCapitalize = "none" />
-  <TextInput style = {styles.input}
+  <TextInput style = {StyleSheet.input}
                underlineColorAndroid = "transparent"
                placeholder = "No.Of Participants"
                placeholderTextColor = "#9a73ef"
                autoCapitalize = "none"
                onChangeText = {this.handleParticipants}/>
-  <TextInput style = {styles.input}
+  <TextInput style = {StyleSheet.input}
                underlineColorAndroid = "transparent"
                placeholder = "NewComers"
                placeholderTextColor = "#9a73ef"
                autoCapitalize = "none"
                onChangeText = {this.handleNewComers}/>
         <TouchableOpacity
-               style = {styles.submitButton}
+               style = {StyleSheet.submitButton}
                onPress = {() => this.confirmtext(this.state.AreaName, this.state.Participants,this.state.NewComers,this.state.ImageSource.uri)}>
-               <Text style = {styles.submitButtonText}> Submit </Text>
+               <Text style = {StyleSheet.submitButtonText}> Submit </Text>
             </TouchableOpacity>
       <Image source={require('../images/thankyou.jpeg') } style={{height:150,width:500}}/>
       <Text>
@@ -156,39 +156,3 @@ export default class Carecellscr extends Component{
 }
 
 
-const styles = StyleSheet.create({
-
-  container: {
-    flex: 1,
-    backgroundColor: '#FFF8E1',
-    margin: 5,
-    paddingTop: ( Platform.OS === 'ios' ) ? 20 : 0
-  },
-
-  ImageContainer: {
-    borderRadius: 150/2,
-    width: 150,
-    height: 150,
-    borderColor: '#9B9B9B',
-    borderWidth: 1 / PixelRatio.get(),
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#CDDC39',
-    
-  },
-  input: {
-    margin: 15,
-    height: 40,
-    borderColor: '#7a42f4',
-    borderWidth: 1
-  },
-  submitButton: {
-    backgroundColor: '#7a42f4',
-    padding: 10,
-    margin: 15,
-    height: 40,
- },
- submitButtonText:{
-    color: 'white'
- }
-});

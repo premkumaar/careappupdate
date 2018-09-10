@@ -5,63 +5,37 @@
  */
 
 import React, { Component } from 'react';
- 
-import { Text, StyleSheet, View, ListView, TextInput, ActivityIndicator, Alert } from 'react-native';
+import StyleSheet from './Style'
+import { 
+  Text, 
+   
+  View,
+  ListView, 
+  TextInput, 
+  FlatList,
+  Alert 
+} from 'react-native';
 var realm = require('realm');
 
-
+import DbHelper from '../db/DbHelper'
 export default class MyProject extends Component {
  
   constructor(props) {
  
     super(props);
-    realm = new Realm({
-      schema: [{name: 'Contacts_Info', 
-      schemaVersion: 1,
-      
-      properties: 
-      {
-        person_id: {type: 'int',   default: 0},
-        first_name: 'string', 
-        last_name: 'string', 
-         mobile_number : 'string',
-         email_id: 'string',
-         address: 'string',
-         
-         
-      }}],
-      // migration: (oldRealm, newRealm) => {
-      //   // only apply this change if upgrading to schemaVersion 1
-      //   if (oldRealm.schemaVersion < 1) {
-      //     const oldObjects = oldRealm.objects('Contacts_Info');
-      //     const newObjects = newRealm.objects('Contacts_Info');
-          
-      //       newObjects[i]. = oldObjects[i].firstName + ' ' + oldObjects[i].lastName;
-      //     }
-      //   }
-      // }
-    });
-   
-    //var mydata = this.getData();
+    
+    
+  //  var mydata = async() => await DbHelper.renderData();
+  //  console.log("new testment "+mydata.length)
 
-    //console.log("data is"+ JSON.stringify(mydata))
-   var mydata = realm.objects('Contacts_Info');
-   let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
- 
-    this.state = {
-      open: false,
-        first_name:'',
-        last_name:'',
-        mobile_number:'',
-        email_id:'',
-        address:'',
-        
+      this.state = {
+        open: false,
+        data:'',
         isLoading: true,
         text: '',
-      mydata:'',
-       dataSource: ds.cloneWithRows(mydata),
+      
          }
-         this.arrayholder = mydata ;
+         this.arrayholder = '';
          
   }
    
@@ -85,9 +59,14 @@ export default class MyProject extends Component {
       return itemData.indexOf(textData) > -1
   })
   this.setState({
-      dataSource: this.state.dataSource.cloneWithRows(newData),
+      data:newData,
       text: text
   })
+}
+async componentDidMount(){
+  var res =  await DbHelper.renderData();
+   this.setState({data: res});
+   this.arrayholder= this.state.data
 }
  
   ListViewItemSeparator = () => {
@@ -112,25 +91,25 @@ export default class MyProject extends Component {
     
       return (
  
-      <View style={styles.MainContainer}>
+      <View style={StyleSheet.MainContainer}>
  
       <TextInput 
-       style={styles.TextInputStyleClass}
+       style={StyleSheet.TextInputStyleClass}
        onChangeText={(text) => this.SearchFilterFunction(text)}
        value={this.state.text}
        underlineColorAndroid='transparent'
        placeholder="Search Here"
         />
  
-        <ListView
+       <FlatList
  
-          dataSource={this.state.dataSource}
+           data={this.state.data}
  
-          renderSeparator= {this.ListViewItemSeparator}
+           renderItem={({item}) => <Text style={StyleSheet.rowViewContainer} 
  
-          renderRow={(rowData) => <Text style={styles.rowViewContainer} 
- 
-          onPress={this.GetListViewItem.bind(this, rowData.first_name , rowData.last_name,rowData.mobile_number,rowData.email_id,rowData.address)} >{rowData.first_name},{rowData.last_name},{rowData.mobile_number},{rowData.email_id},{rowData.address}</Text>}
+          onPress={this.GetListViewItem.bind(this, item.first_name , 
+            item.last_name,item.mobile_number,item.email_id,item.address)} >{item.first_name},{item.last_name},
+            {item.mobile_number},{item.email_id},{item.address}</Text>}
       
           enableEmptySections={true}
  
@@ -143,30 +122,3 @@ export default class MyProject extends Component {
   }
 }
  
-const styles = StyleSheet.create({
- 
- MainContainer :{
- 
-  justifyContent: 'center',
-  flex:1,
-  margin: 7,
- 
-  },
- 
- rowViewContainer: {
-   fontSize: 17,
-   padding: 10
-  },
- 
-  TextInputStyleClass:{
-        
-   textAlign: 'center',
-   height: 40,
-   borderWidth: 1,
-   borderColor: '#009688',
-   borderRadius: 7 ,
-   backgroundColor : "#FFFFFF"
-        
-   }
- 
-});
