@@ -178,6 +178,10 @@ return(
                 style={StyleSheet.textViewContainer} >
                 {'address = ' + item.address}
               </Text>
+              <Text 
+                style={StyleSheet.textViewContainer} >
+                {'birthday = ' +item.birthday}
+              </Text>
             </TouchableOpacity>
           </View> }
     />

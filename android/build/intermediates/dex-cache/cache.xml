@@ -3,12 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_1aa6cc1d5e271ce0c384f123714d310f6faa50de.jar" />
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_39fb618b32d747b4ae8e7af5aeb784e9a7b4b935.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/care/react-native-sqlite-storage/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7947cf149ca6e5ba2fd90104dce21f86c661d34d">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-react-native-sqlite-storage-unspecified_e459faad466d2a3e01a4dc475ef8b718a03b63bc.jar" />
     </item>
     <item
         is-multidex="false"
@@ -17,34 +26,43 @@
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_788d9cc283ce25c1a7880fd269cdb8b128422b7a.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_788d9cc283ce25c1a7880fd269cdb8b128422b7a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/care/react-native-sqlite-storage/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="7947cf149ca6e5ba2fd90104dce21f86c661d34d">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-react-native-sqlite-storage-unspecified_ec5089a5899002d9c052c991e35a65c5ce434b5e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/care/react-native-fs/unspecified/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/care/react-native-fs/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="5f4e639971a092eff55b6f0b973faa73253d61a1">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-react-native-fs-unspecified_c44ae1d89975d26b5cb1a2ee678c2b9f1965d43e.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-react-native-fs-unspecified_bfcb8de6e0b104013422ff734b222449909108c8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/care/react-native-image-picker/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_2a06bb373544eed0796595fe2074924219db86cf.jar" />
+        sha1="58d8037e4cddaac77cdf793b2311742b00c067b1">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-react-native-image-picker-unspecified_dd8c964687a50d53fc52651f30e68b6b6d5beaf6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/care/realm/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f6b77ba00bc5a34fdc09a6e36ac8ee7f762404d7">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-realm-unspecified_cd6f2bf58cdef05b1c6b61f196ee90374ca537f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_461b7abdcd069e0f82d320c215fcb839b0b2b7be.jar" />
     </item>
     <item
         is-multidex="false"
@@ -53,43 +71,52 @@
         optimize="true"
         revision="23.0.1"
         sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_26e0a16738539b45d0eed82b3c5601579dc76ed4.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_26e0a16738539b45d0eed82b3c5601579dc76ed4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/care/react-native-vector-icons/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_c64ae9345fc99802520aa72fcb5f02769556f15b.jar" />
+        sha1="001d8a96417bf5d83cb2759a3bb0d635101dda4c">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-react-native-vector-icons-unspecified_b1b226f2842f531347738b9016acdbd6c2d493bb.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_ecc92716024cfb01f2575304b0e77bfa58093c1b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_942403c8d28141331287377c77a698ec2a5c38e4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_a3466614fcdf17b2ee93edfb6865c4506a02f2b9.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_582a5bf03a94519f1c8cf359ae909f5b93346e53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_3482f176eb86ff54910359b346d6408bb8bd6480.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_367ec0566935078ae06433414df05064094bbe25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_a92b424e09a273d839daec4f20803b96a66f38a4.jar" />
     </item>
     <item
         is-multidex="false"
@@ -98,25 +125,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_d0c4cf0c43c7eedc62f8bb2ef88c3a0b5d8990da.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/care/react-native-vector-icons/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="001d8a96417bf5d83cb2759a3bb0d635101dda4c">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-react-native-vector-icons-unspecified_ad83375599de217f7210cebf5aededc66b259f06.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_7e75f4d99a88e64d1abcc00df3ee6270a72cf914.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_d0c4cf0c43c7eedc62f8bb2ef88c3a0b5d8990da.jar" />
     </item>
     <item
         is-multidex="false"
@@ -125,25 +134,25 @@
         optimize="true"
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_7f310cb1a5898acf862c3ddc3649292247529a79.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_7f310cb1a5898acf862c3ddc3649292247529a79.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_f95f00a4d83e58a7cb6dcd768df89210740eed33.jar" />
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_0b6d1257d6cfea9ea726fe2e3e0f7e071d732ca9.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_e07df2723a9ec284c3a22c6280d1d50fea6ab6a1.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_a60fdd01c7a1a91193b8d659ea2beec9074df62c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -152,16 +161,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_c66dd897a1556d8a0bb34a50d257e31cb9184f39.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_d0e56022e277c9d9443826ecb561c00948b6eccf.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_c66dd897a1556d8a0bb34a50d257e31cb9184f39.jar" />
     </item>
     <item
         is-multidex="false"
@@ -170,7 +170,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="073a02117620b6cc7683a1ed6ae24c2f36e2a715">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/nanohttpd-2.2.0_dddf34e2cf3d201c62db8b689da7433587a71716.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/nanohttpd-2.2.0_dddf34e2cf3d201c62db8b689da7433587a71716.jar" />
     </item>
     <item
         is-multidex="false"
@@ -179,16 +179,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_43f5128bc1d94c805ed3edd10ca099509ccdbab9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/care/react-native-image-picker/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="58d8037e4cddaac77cdf793b2311742b00c067b1">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-react-native-image-picker-unspecified_291193bb6072c68261b2d05ca408ecc3528dfa10.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_43f5128bc1d94c805ed3edd10ca099509ccdbab9.jar" />
     </item>
     <item
         is-multidex="false"
@@ -197,34 +188,25 @@
         optimize="true"
         revision="23.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6d72003d8ac2470bc7220d00b0a959b5517fdb85.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6d72003d8ac2470bc7220d00b0a959b5517fdb85.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_22115cf0f7fa2ad306eccb36315bae9f2a774cc9.jar" />
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_c0cb8af836325aa9ad645d10715d460a62b04b4e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_d465928392c79228b3f9c0413e0e691859635298.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_03f5f34ed58861d8360c1963f3edd2ca7e052690.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_38e8ecdbd2d29ae9427461480c90bf8a70855a88.jar" />
     </item>
     <item
         is-multidex="false"
@@ -233,16 +215,34 @@
         optimize="true"
         revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_51fc6c2bf8b8da4e99b31ef58a5b3cd24e663981.jar" />
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_51fc6c2bf8b8da4e99b31ef58a5b3cd24e663981.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/exploded-aar/care/realm/unspecified/jars/classes.jar"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="f6b77ba00bc5a34fdc09a6e36ac8ee7f762404d7">
-        <dex dex="/home/prem/Downloads/Careapp-master/android/app/build/intermediates/pre-dexed/debug/care-realm-unspecified_fa9e91cf5c8f0e0a5c4bd1f53486a48903cc7b62.jar" />
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_12fe233c25202a351f538ecc6f3eb5e3e3e328d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_596c04e82a25ffcae4f2030c24a457d453c3c07f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/home/prem/Desktop/Careapp-master/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_4a6f0ee4d1af950e88d8a2457676d210a9cbe812.jar" />
     </item>
 
 </items>

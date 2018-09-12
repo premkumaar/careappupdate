@@ -15,7 +15,8 @@ ContactsInfo.schema = {
      mobile_number : 'string',
      email_id: 'string',
      address: 'string',
+     birthday: 'string'
   }
 }
-
+  
 

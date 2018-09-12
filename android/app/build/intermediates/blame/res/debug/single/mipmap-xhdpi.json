@@ -2,5 +2,9 @@
     {
         "merged": "/home/prem/Downloads/Careapp-master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/home/prem/Downloads/Careapp-master/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/prem/Desktop/Careapp-master/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/prem/Desktop/Careapp-master/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }
 ]

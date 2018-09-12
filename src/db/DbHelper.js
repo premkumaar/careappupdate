@@ -12,7 +12,7 @@ class DbHelper {
  async getRealm() {
  
     	try {
-    		return  await Realm.open({schema: [ContactsInfo], schemaVersion: 2})
+    		return  await Realm.open({schema: [ContactsInfo], schemaVersion: 3})
     	} catch (err) {
         console.log("error "+err)
     		return null;
@@ -29,7 +29,8 @@ class DbHelper {
         console.log("value is there")
       }
     }
-      async addData(fname,Lname,mobile,email,address) {
+    
+      async addData(fname,Lname,mobile,email,address,birthday) {
       const realm = await this.getRealm()
       
         console.log("opennnnn"+realm.length);
@@ -45,7 +46,8 @@ class DbHelper {
                     last_name:Lname,
                     mobile_number:mobile,
                     email_id:email,
-                    address:address
+                    address:address,
+                    birthday:birthday
                     });
             })
         Alert.alert("Student Details Added Successfully.")
@@ -82,11 +84,20 @@ class DbHelper {
            obj[ID].mobile_number = mobileNum;
            obj[ID].email_id = emailId;
            obj[ID].address = address;
+           
      
           });
           Alert.alert("Student Details Updated Successfully.")
         }
-         async Delete_Person(id){
+       
+      async  SearchFilterFunction (searchText){
+             let realm = await this.getRealm()
+            return realm.objects("Contacts_Info").filtered(`first_name CONTAINS[c] "${searchText}"`);
+            
+      }
+          
+
+          async Delete_Person(id){
             let realm = await this.getRealm()
           
             realm.write(() => {
@@ -97,6 +108,7 @@ class DbHelper {
             });
               Alert.alert("Record Deleted Successfully.")
             }
+            
 
 }
 

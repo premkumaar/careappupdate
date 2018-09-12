@@ -26,7 +26,7 @@ export default class UserEnterScreen extends Component
   this.props.navigation.state.params.updateData(this.state.First_Name,
     this.state.Last_Name,
     this.state.Mobile_Number,
-    this.state.Email_Id,this.state.Address)
+    this.state.Email_Id,this.state.Address,this.state.DateText)
    this.props.navigation.navigate('First');
    
    }
@@ -105,7 +105,7 @@ onDatePickedFunction = (date) => {
 
  add_Person= async()=> {
   await DbHelper.addData(this.state.First_Name,this.state.Last_Name,
-  this.state.Mobile_Number,this.state.Email_Id,this.state.Address);
+  this.state.Mobile_Number,this.state.Email_Id,this.state.Address,this.state.DateText);
   
 }
 

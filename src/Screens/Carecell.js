@@ -15,6 +15,7 @@ import {
   Image,Alert,
   TextInput
 } from 'react-native';
+
 import StyleSheet from './Style'
 import ImagePicker from 'react-native-image-picker';
 
@@ -40,9 +41,23 @@ export default class Carecellscr extends Component{
  }
 
   confirmtext = (AreaName, Participants,NewComers,ImageSource) => {
-  Alert.alert('AreaName: ' + AreaName + ' Participants: ' + Participants+'NewComers: '+ NewComers)
+  Alert.alert('AreaName: ' + AreaName + ' Participants: ' + 
+  Participants+'NewComers: '+ NewComers)
   }
-  
+  realmquries(){
+   
+
+
+
+
+  }
+
+
+
+
+
+
+
   async componentDidMount(){
     try {
       const value = await AsyncStorage.getItem('AreaName');
@@ -113,7 +128,8 @@ export default class Carecellscr extends Component{
     return (
       <View style={StyleSheet. carecontainer}>
 
-        <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)} style={{justifyContent:'flex-end',alignItems:'flex-end'}}>
+        <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)} 
+        style={{justifyContent:'flex-end',alignItems:'flex-end'}}>
 
           <View style={StyleSheet.ImageContainer}>
 
@@ -142,13 +158,17 @@ export default class Carecellscr extends Component{
                onChangeText = {this.handleNewComers}/>
         <TouchableOpacity
                style = {StyleSheet.submitButton}
-               onPress = {() => this.confirmtext(this.state.AreaName, this.state.Participants,this.state.NewComers,this.state.ImageSource.uri)}>
+               onPress = {() => this.confirmtext(this.state.AreaName,
+                this.state.Participants,this.state.NewComers,
+                this.state.ImageSource.uri)}>
                <Text style = {StyleSheet.submitButtonText}> Submit </Text>
             </TouchableOpacity>
-      <Image source={require('../images/thankyou.jpeg') } style={{height:150,width:500}}/>
-      <Text>
-               {this.state.AreaName}
-            </Text>
+     
+            <TouchableOpacity
+               style = {StyleSheet.submitButton}
+               onPress = {() => this.realmquries()}>
+               <Text style = {StyleSheet.submitButtonText}> realm</Text>
+            </TouchableOpacity>
        </View>
     )
   }

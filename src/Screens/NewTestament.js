@@ -18,24 +18,20 @@ import {
 var realm = require('realm');
 
 import DbHelper from '../db/DbHelper'
-export default class MyProject extends Component {
+export default class NewTestament extends Component {
  
   constructor(props) {
  
     super(props);
-    
-    
-  //  var mydata = async() => await DbHelper.renderData();
-  //  console.log("new testment "+mydata.length)
-
       this.state = {
         open: false,
         data:'',
         isLoading: true,
         text: '',
       
+      
          }
-         this.arrayholder = '';
+          
          
   }
    
@@ -44,29 +40,12 @@ export default class MyProject extends Component {
    Alert.alert(first_name,last_name);
   
   }
-  // componentDidMount() {
-  //   console.log("hdhd", DbHelper.getData())
-  // }
-  // getData = async () => {
-  //   return await DbHelper.getData();
-  // }
-  
-   SearchFilterFunction(text){
-     
-    const newData = this.arrayholder.filter(function(item){
-      const itemData = item.first_name.toUpperCase()
-      const textData = text.toUpperCase()
-      return itemData.indexOf(textData) > -1
-  })
-  this.setState({
-      data:newData,
-      text: text
-  })
-}
+ 
 async componentDidMount(){
-  var res =  await DbHelper.renderData();
+  var res =  await DbHelper.renderData()
+
    this.setState({data: res});
-   this.arrayholder= this.state.data
+   
 }
  
   ListViewItemSeparator = () => {
@@ -80,13 +59,16 @@ async componentDidMount(){
       />
     );
   }
-  // async componentDidMount(){
-  //   var res = await DbHelper.getData()
-  //   console.log("resuly from homescreen "+res)
-  //   this.setState({mydata:res})
+  
+  async onSearch(text){
+    
+    
+    var searchText = await DbHelper.SearchFilterFunction(text)
+    console.log("searched "+JSON.stringify(searchText))
+    this.setState({data:searchText})
 
-  // }
- 
+  }
+  
   render() {
     
       return (
@@ -95,9 +77,9 @@ async componentDidMount(){
  
       <TextInput 
        style={StyleSheet.TextInputStyleClass}
-       onChangeText={(text) => this.SearchFilterFunction(text)}
-       value={this.state.text}
-       underlineColorAndroid='transparent'
+       
+       autoCorrect={false}
+       onChangeText={(text)=> this.onSearch(text)}
        placeholder="Search Here"
         />
  
